@@ -1,0 +1,10 @@
+{
+  "name": "blackfox2/common",
+  "type": "library",
+  "description": "Common classes for BlackFox2 project",
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  }
+}
