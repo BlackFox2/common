@@ -4,7 +4,7 @@ namespace BlackFox2;
 
 /**
  * Trait Instance
- * Trait is a direct synonym for singleton.
+ * Instance is a direct synonym for singleton.
  * Unlike singleton, this pattern does not prohibit the creation of new objects of the same class.
  * In most cases, the project requires the same immutable global object:
  * ```php
