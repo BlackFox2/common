@@ -73,7 +73,11 @@ trait Instance {
 	 */
 	public static function N() {
 		$ReflectionClass = new \ReflectionClass(get_called_class());
-		$Parameters = $ReflectionClass->getMethod('__construct')->getParameters();
+		try {
+			$Parameters = $ReflectionClass->getMethod('__construct')->getParameters();
+		} catch (\ReflectionException $error) {
+			$Parameters = [];
+		}
 
 		$args = [];
 		foreach ($Parameters as $Parameter) {
